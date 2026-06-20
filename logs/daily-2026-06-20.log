@@ -1,0 +1,872 @@
+2026-06-20 11:44:13.012 debug: Adding compression
+2026-06-20 11:44:13.014 debug: Configuring event emitter listeners.
+2026-06-20 11:45:43.652 debug: Adding compression
+2026-06-20 11:45:43.654 debug: Configuring event emitter listeners.
+2026-06-20 11:47:48.898 debug: Adding compression
+2026-06-20 11:47:48.900 debug: Configuring event emitter listeners.
+2026-06-20 11:47:53.007 debug: Adding compression
+2026-06-20 11:47:53.009 debug: Configuring event emitter listeners.
+2026-06-20 11:47:54.985 debug: Adding compression
+2026-06-20 11:47:54.987 debug: Configuring event emitter listeners.
+2026-06-20 11:48:01.336 debug: Adding compression
+2026-06-20 11:48:01.338 debug: Configuring event emitter listeners.
+2026-06-20 11:48:30.508 debug: Adding compression
+2026-06-20 11:48:30.510 debug: Configuring event emitter listeners.
+2026-06-20 11:48:30.763 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:48:30 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396699.875},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":40165376,"heapUsed":30019336,"rss":83640320},"pid":31764,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:48:30.763 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:48:30 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396699.875},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":40165376,"heapUsed":30019336,"rss":83640320},"pid":31764,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:48:34.366 debug: Adding compression
+2026-06-20 11:48:34.368 debug: Configuring event emitter listeners.
+2026-06-20 11:48:34.600 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:48:34 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396703.703},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":40165376,"heapUsed":29835168,"rss":83529728},"pid":5308,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:48:34.600 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:48:34 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396703.703},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":40165376,"heapUsed":29835168,"rss":83529728},"pid":5308,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:49:30.204 debug: Adding compression
+2026-06-20 11:49:30.206 debug: Configuring event emitter listeners.
+2026-06-20 11:49:30.436 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:49:30 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396759.546},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":39927808,"heapUsed":28740880,"rss":83435520},"pid":8588,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:49:30.436 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:49:30 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396759.546},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":39927808,"heapUsed":28740880,"rss":83435520},"pid":8588,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:49:48.997 debug: Adding compression
+2026-06-20 11:49:48.999 debug: Configuring event emitter listeners.
+2026-06-20 11:49:49.223 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:49:49 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396778.328},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":39927808,"heapUsed":28731240,"rss":83464192},"pid":21324,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:49:49.223 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:49:49 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396778.328},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":39927808,"heapUsed":28731240,"rss":83464192},"pid":21324,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:50:51.786 debug: Adding compression
+2026-06-20 11:50:51.788 debug: Configuring event emitter listeners.
+2026-06-20 11:50:52.014 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:50:52 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396841.093},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":39927808,"heapUsed":28741688,"rss":83259392},"pid":21276,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:50:52.014 error: uncaughtException: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './bbdcache'
+Require stack:
+- D:\BLS\blsnode\src\middleware\functions.js
+- D:\BLS\blsnode\src\models\home.model.js
+- D:\BLS\blsnode\src\controllers\home.controller.js
+- D:\BLS\blsnode\src\routes\home.route.js
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\middleware\functions.js:16:18)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 11:50:52 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\src\\middleware\\functions.js","D:\\BLS\\blsnode\\src\\models\\home.model.js","D:\\BLS\\blsnode\\src\\controllers\\home.controller.js","D:\\BLS\\blsnode\\src\\routes\\home.route.js","D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1396841.093},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3502336,"heapTotal":39927808,"heapUsed":28741688,"rss":83259392},"pid":21276,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './bbdcache'\nRequire stack:\n- D:\\BLS\\blsnode\\src\\middleware\\functions.js\n- D:\\BLS\\blsnode\\src\\models\\home.model.js\n- D:\\BLS\\blsnode\\src\\controllers\\home.controller.js\n- D:\\BLS\\blsnode\\src\\routes\\home.route.js\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\middleware\\functions.js:16:18)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":18,"file":"D:\\BLS\\blsnode\\src\\middleware\\functions.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 11:52:46.751 debug: Adding compression
+2026-06-20 11:52:46.754 debug: Configuring event emitter listeners.
+2026-06-20 11:53:03.687 debug: Adding compression
+2026-06-20 11:53:03.689 debug: Configuring event emitter listeners.
+2026-06-20 11:54:52.246 debug: Adding compression
+2026-06-20 11:54:52.248 debug: Configuring event emitter listeners.
+2026-06-20 11:55:57.473 debug: Adding compression
+2026-06-20 11:55:57.476 debug: Configuring event emitter listeners.
+2026-06-20 11:56:10.228 debug: Adding compression
+2026-06-20 11:56:10.230 debug: Configuring event emitter listeners.
+2026-06-20 11:56:25.719 debug: Adding compression
+2026-06-20 11:56:25.721 debug: Configuring event emitter listeners.
+2026-06-20 11:56:32.718 debug: Adding compression
+2026-06-20 11:56:32.720 debug: Configuring event emitter listeners.
+2026-06-20 11:56:49.402 debug: Adding compression
+2026-06-20 11:56:49.404 debug: Configuring event emitter listeners.
+2026-06-20 11:56:52.490 debug: Adding compression
+2026-06-20 11:56:52.492 debug: Configuring event emitter listeners.
+2026-06-20 11:58:24.368 debug: Adding compression
+2026-06-20 11:58:24.371 debug: Configuring event emitter listeners.
+2026-06-20 11:58:35.367 debug: Adding compression
+2026-06-20 11:58:35.370 debug: Configuring event emitter listeners.
+2026-06-20 11:59:01.588 error: uncaughtException: Cannot read properties of undefined (reading 'tot')
+TypeError: Cannot read properties of undefined (reading 'tot')
+    at Featuredlist.getAllFeaturedList (D:\BLS\blsnode\src\models\featuredlist.model.js:407:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {"date":"Sat Jun 20 2026 11:59:01 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397330.687},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":83299,"external":3680496,"heapTotal":29474816,"heapUsed":27440760,"rss":75730944},"pid":16084,"uid":null,"version":"v22.20.0"},"stack":"TypeError: Cannot read properties of undefined (reading 'tot')\n    at Featuredlist.getAllFeaturedList (D:\\BLS\\blsnode\\src\\models\\featuredlist.model.js:407:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","trace":[{"column":29,"file":"D:\\BLS\\blsnode\\src\\models\\featuredlist.model.js","function":"Featuredlist.getAllFeaturedList","line":407,"method":"getAllFeaturedList","native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+2026-06-20 12:04:12.756 debug: Adding compression
+2026-06-20 12:04:12.758 debug: Configuring event emitter listeners.
+2026-06-20 12:04:13.355 error: uncaughtException: Cannot find module './src/routes/whoswho.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/whoswho.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:41:23)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:13 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397642.453},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":58085376,"heapUsed":28595536,"rss":86650880},"pid":25536,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/whoswho.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:41:23)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":23,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":41,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:13.355 error: uncaughtException: Cannot find module './src/routes/whoswho.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/whoswho.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:41:23)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:13 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397642.453},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":58085376,"heapUsed":28595536,"rss":86650880},"pid":25536,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/whoswho.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:41:23)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":23,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":41,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:17.658 debug: Adding compression
+2026-06-20 12:04:17.660 debug: Configuring event emitter listeners.
+2026-06-20 12:04:17.663 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:17 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397646.765},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13885600,"rss":56311808},"pid":10848,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:17.663 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:17 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397646.765},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13885600,"rss":56311808},"pid":10848,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:19.945 debug: Adding compression
+2026-06-20 12:04:19.947 debug: Configuring event emitter listeners.
+2026-06-20 12:04:19.950 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:19 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397649.046},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13783576,"rss":56074240},"pid":24456,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:19.950 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:19 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397649.046},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13783576,"rss":56074240},"pid":24456,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:22.304 debug: Adding compression
+2026-06-20 12:04:22.306 debug: Configuring event emitter listeners.
+2026-06-20 12:04:22.308 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:22 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397651.421},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13841368,"rss":56250368},"pid":21860,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:22.308 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:22 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397651.421},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13841368,"rss":56250368},"pid":21860,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:24.937 debug: Adding compression
+2026-06-20 12:04:24.940 debug: Configuring event emitter listeners.
+2026-06-20 12:04:24.942 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:24 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397654.031},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13841448,"rss":56213504},"pid":24896,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:24.942 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:24 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397654.031},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13841448,"rss":56213504},"pid":24896,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:29.906 debug: Adding compression
+2026-06-20 12:04:29.909 debug: Configuring event emitter listeners.
+2026-06-20 12:04:29.912 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:29 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397659.015},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13823456,"rss":56229888},"pid":18584,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:29.912 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:29 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397659.015},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13823456,"rss":56229888},"pid":18584,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:32.756 debug: Adding compression
+2026-06-20 12:04:32.758 debug: Configuring event emitter listeners.
+2026-06-20 12:04:32.760 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:32 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397661.859},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":20758528,"heapUsed":13889832,"rss":56287232},"pid":28236,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:32.760 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:32 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397661.859},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":20758528,"heapUsed":13889832,"rss":56287232},"pid":28236,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:35.653 debug: Adding compression
+2026-06-20 12:04:35.655 debug: Configuring event emitter listeners.
+2026-06-20 12:04:35.657 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:35 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397664.765},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13880864,"rss":56266752},"pid":28228,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:35.657 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:35 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397664.765},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13880864,"rss":56266752},"pid":28228,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:38.484 debug: Adding compression
+2026-06-20 12:04:38.486 debug: Configuring event emitter listeners.
+2026-06-20 12:04:38.489 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:38 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397667.593},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13816112,"rss":56205312},"pid":21844,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:38.489 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:38 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397667.593},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13816112,"rss":56205312},"pid":21844,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:41.076 debug: Adding compression
+2026-06-20 12:04:41.078 debug: Configuring event emitter listeners.
+2026-06-20 12:04:41.081 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:41 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397670.187},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13915600,"rss":56193024},"pid":11744,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:41.081 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:41 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397670.187},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13915600,"rss":56193024},"pid":11744,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:46.320 debug: Adding compression
+2026-06-20 12:04:46.322 debug: Configuring event emitter listeners.
+2026-06-20 12:04:46.324 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:46 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397675.421},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13849048,"rss":56504320},"pid":9312,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:46.324 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:46 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397675.421},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13849048,"rss":56504320},"pid":9312,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:49.459 debug: Adding compression
+2026-06-20 12:04:49.461 debug: Configuring event emitter listeners.
+2026-06-20 12:04:49.464 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:49 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397678.562},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13910928,"rss":56406016},"pid":11912,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:49.464 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:49 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397678.562},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13910928,"rss":56406016},"pid":11912,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:52.209 debug: Adding compression
+2026-06-20 12:04:52.211 debug: Configuring event emitter listeners.
+2026-06-20 12:04:52.213 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:52 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397681.312},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13876744,"rss":56483840},"pid":22952,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:52.213 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:52 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397681.312},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13876744,"rss":56483840},"pid":22952,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:54.820 debug: Adding compression
+2026-06-20 12:04:54.822 debug: Configuring event emitter listeners.
+2026-06-20 12:04:54.825 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:54 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397683.921},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13874704,"rss":56143872},"pid":16740,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:54.825 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:54 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397683.921},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13874704,"rss":56143872},"pid":16740,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:57.296 debug: Adding compression
+2026-06-20 12:04:57.298 debug: Configuring event emitter listeners.
+2026-06-20 12:04:57.301 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:57 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397686.406},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13938200,"rss":56336384},"pid":19948,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:57.301 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:57 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397686.406},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13938200,"rss":56336384},"pid":19948,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:59.715 debug: Adding compression
+2026-06-20 12:04:59.717 debug: Configuring event emitter listeners.
+2026-06-20 12:04:59.719 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:59 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397688.828},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13853560,"rss":56299520},"pid":24388,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:59.719 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:59 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397688.828},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13853560,"rss":56299520},"pid":24388,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:59.984 debug: Adding compression
+2026-06-20 12:04:59.986 debug: Configuring event emitter listeners.
+2026-06-20 12:04:59.988 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:59 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397689.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13847240,"rss":56066048},"pid":4092,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:04:59.988 error: uncaughtException: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+Error: Cannot find module './src/routes/home.route'
+Require stack:
+- D:\BLS\blsnode\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\app.js:36:20)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14) {"date":"Sat Jun 20 2026 12:04:59 GMT+0300 (Arabian Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\BLS\\blsnode\\app.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1397689.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21020672,"heapUsed":13847240,"rss":56066048},"pid":4092,"uid":null,"version":"v22.20.0"},"stack":"Error: Cannot find module './src/routes/home.route'\nRequire stack:\n- D:\\BLS\\blsnode\\app.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\app.js:36:20)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1383,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1025,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1030,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1192,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\app.js","function":null,"line":36,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false}]}
+2026-06-20 12:05:06.517 debug: Adding compression
+2026-06-20 12:05:06.520 debug: Configuring event emitter listeners.
+2026-06-20 12:06:24.721 debug: Adding compression
+2026-06-20 12:06:24.724 debug: Configuring event emitter listeners.
+2026-06-20 12:06:35.101 debug: Adding compression
+2026-06-20 12:06:35.104 debug: Configuring event emitter listeners.
