@@ -872,3 +872,371 @@ Require stack:
 2026-06-20 12:06:35.104 debug: Configuring event emitter listeners.
 2026-06-20 12:06:52.749 debug: Adding compression
 2026-06-20 12:06:52.751 debug: Configuring event emitter listeners.
+2026-06-20 12:42:24.285 debug: Adding compression
+2026-06-20 12:42:24.287 debug: Configuring event emitter listeners.
+2026-06-20 14:29:14.906 debug: Adding compression
+2026-06-20 14:29:14.908 debug: Configuring event emitter listeners.
+2026-06-20 15:03:00.599 debug: Adding compression
+2026-06-20 15:03:00.602 debug: Configuring event emitter listeners.
+2026-06-20 15:03:01.205 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:03:01 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3400.062},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57606144,"heapUsed":27122192,"rss":93245440},"pid":8296,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:03:01.205 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:03:01 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3400.062},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57606144,"heapUsed":27122192,"rss":93245440},"pid":8296,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:08:56.199 debug: Adding compression
+2026-06-20 15:08:56.202 debug: Configuring event emitter listeners.
+2026-06-20 15:08:56.599 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:08:56 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3755.453},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57868288,"heapUsed":26974264,"rss":86278144},"pid":23236,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:08:56.599 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:08:56 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3755.453},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57868288,"heapUsed":26974264,"rss":86278144},"pid":23236,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:09:22.984 debug: Adding compression
+2026-06-20 15:09:22.986 debug: Configuring event emitter listeners.
+2026-06-20 15:09:23.262 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:09:23 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3782.109},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57823232,"heapUsed":25925056,"rss":86433792},"pid":2568,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:09:23.262 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:09:23 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3782.109},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57823232,"heapUsed":25925056,"rss":86433792},"pid":2568,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:10:55.878 debug: Adding compression
+2026-06-20 15:10:55.880 debug: Configuring event emitter listeners.
+2026-06-20 15:10:56.149 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:10:56 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3875.015},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57561088,"heapUsed":26088408,"rss":87392256},"pid":9544,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:10:56.149 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:10:56 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3875.015},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":57561088,"heapUsed":26088408,"rss":87392256},"pid":9544,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:11:08.967 debug: Adding compression
+2026-06-20 15:11:08.970 debug: Configuring event emitter listeners.
+2026-06-20 15:13:12.133 debug: Adding compression
+2026-06-20 15:13:12.135 debug: Configuring event emitter listeners.
+2026-06-20 15:13:22.632 debug: Adding compression
+2026-06-20 15:13:22.634 debug: Configuring event emitter listeners.
+2026-06-20 15:13:47.284 debug: Adding compression
+2026-06-20 15:13:47.287 debug: Configuring event emitter listeners.
+2026-06-20 15:13:50.600 debug: Adding compression
+2026-06-20 15:13:50.602 debug: Configuring event emitter listeners.
+2026-06-20 15:15:01.890 debug: Adding compression
+2026-06-20 15:15:01.893 debug: Configuring event emitter listeners.
+2026-06-20 15:15:07.547 debug: Adding compression
+2026-06-20 15:15:07.549 debug: Configuring event emitter listeners.
+2026-06-20 15:15:12.652 debug: Adding compression
+2026-06-20 15:15:12.654 debug: Configuring event emitter listeners.
+2026-06-20 15:15:15.958 debug: Adding compression
+2026-06-20 15:15:15.960 debug: Configuring event emitter listeners.
+2026-06-20 15:16:08.580 debug: Adding compression
+2026-06-20 15:16:08.582 debug: Configuring event emitter listeners.
+2026-06-20 15:16:26.426 debug: Adding compression
+2026-06-20 15:16:26.429 debug: Configuring event emitter listeners.
+2026-06-20 15:16:39.889 debug: Adding compression
+2026-06-20 15:16:39.892 debug: Configuring event emitter listeners.
+2026-06-20 15:17:12.138 debug: Adding compression
+2026-06-20 15:17:12.140 debug: Configuring event emitter listeners.
+2026-06-20 15:17:33.723 debug: Adding compression
+2026-06-20 15:17:33.725 debug: Configuring event emitter listeners.
+2026-06-20 15:18:47.164 debug: Adding compression
+2026-06-20 15:18:47.167 debug: Configuring event emitter listeners.
+2026-06-20 15:19:05.947 debug: Adding compression
+2026-06-20 15:19:05.950 debug: Configuring event emitter listeners.
+2026-06-20 15:19:59.492 debug: Adding compression
+2026-06-20 15:19:59.494 debug: Configuring event emitter listeners.
+2026-06-20 15:20:08.148 debug: Adding compression
+2026-06-20 15:20:08.150 debug: Configuring event emitter listeners.
+2026-06-20 15:20:16.829 debug: Adding compression
+2026-06-20 15:20:16.831 debug: Configuring event emitter listeners.
+2026-06-20 15:20:17.102 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:20:17 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":4435.953},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":58060800,"heapUsed":27095640,"rss":87883776},"pid":5128,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:20:17.102 error: uncaughtException: argument handler must be a function
+TypeError: argument handler must be a function
+    at Route.<computed> [as post] (D:\BLS\blsnode\node_modules\router\lib\route.js:228:15)
+    at Router.<computed> [as post] (D:\BLS\blsnode\node_modules\router\index.js:448:19)
+    at Object.<anonymous> (D:\BLS\blsnode\src\routes\login.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12) {"date":"Sat Jun 20 2026 15:20:17 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":4435.953},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":69160,"external":3503562,"heapTotal":58060800,"heapUsed":27095640,"rss":87883776},"pid":5128,"uid":null,"version":"v22.20.0"},"stack":"TypeError: argument handler must be a function\n    at Route.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:228:15)\n    at Router.<computed> [as post] (D:\\BLS\\blsnode\\node_modules\\router\\index.js:448:19)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\routes\\login.route.js:7:8)\n    at Module._compile (node:internal/modules/cjs/loader:1706:14)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)","trace":[{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.<computed> [as post]","line":228,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"Router.<computed> [as post]","line":448,"method":"<computed> [as post]","native":false},{"column":8,"file":"D:\\BLS\\blsnode\\src\\routes\\login.route.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1706,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false}]}
+2026-06-20 15:20:32.689 debug: Adding compression
+2026-06-20 15:20:32.691 debug: Configuring event emitter listeners.
+2026-06-20 15:20:53.566 debug: Adding compression
+2026-06-20 15:20:53.568 debug: Configuring event emitter listeners.
+2026-06-20 15:20:55.683 debug: Adding compression
+2026-06-20 15:20:55.685 debug: Configuring event emitter listeners.
+2026-06-20 15:32:31.119 debug: Adding compression
+2026-06-20 15:32:31.123 debug: Configuring event emitter listeners.
+2026-06-20 15:32:56.562 debug: Adding compression
+2026-06-20 15:32:56.564 debug: Configuring event emitter listeners.
+2026-06-20 15:34:08.962 debug: Adding compression
+2026-06-20 15:34:08.965 debug: Configuring event emitter listeners.
+2026-06-20 15:39:23.145 debug: Adding compression
+2026-06-20 15:39:23.147 debug: Configuring event emitter listeners.
+2026-06-20 15:42:12.829 debug: Adding compression
+2026-06-20 15:42:12.831 debug: Configuring event emitter listeners.
+2026-06-20 15:43:33.642 debug: Adding compression
+2026-06-20 15:43:33.644 debug: Configuring event emitter listeners.
+2026-06-20 15:44:15.459 debug: Adding compression
+2026-06-20 15:44:15.461 debug: Configuring event emitter listeners.
+2026-06-20 15:44:20.574 debug: Adding compression
+2026-06-20 15:44:20.576 debug: Configuring event emitter listeners.
+2026-06-20 15:44:30.179 debug: Adding compression
+2026-06-20 15:44:30.181 debug: Configuring event emitter listeners.
+2026-06-20 15:44:30.216 error: uncaughtException: await is only valid in async functions and the top level bodies of modules
+D:\BLS\blsnode\src\models\login.model.js:103
+   const hash = await bcrypt.hash(password, saltRounds);
+                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\controllers\login.controller.js:1:20) {"date":"Sat Jun 20 2026 15:44:30 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5889.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":20705280,"heapUsed":14579616,"rss":56373248},"pid":25492,"uid":null,"version":"v22.20.0"},"stack":"D:\\BLS\\blsnode\\src\\models\\login.model.js:103\n   const hash = await bcrypt.hash(password, saltRounds);\n                ^^^^^\n\nSyntaxError: await is only valid in async functions and the top level bodies of modules\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\controllers\\login.controller.js:1:20)","trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1638,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1680,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\src\\controllers\\login.controller.js","function":null,"line":1,"method":null,"native":false}]}
+2026-06-20 15:44:30.216 error: uncaughtException: await is only valid in async functions and the top level bodies of modules
+D:\BLS\blsnode\src\models\login.model.js:103
+   const hash = await bcrypt.hash(password, saltRounds);
+                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\controllers\login.controller.js:1:20) {"date":"Sat Jun 20 2026 15:44:30 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5889.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":20705280,"heapUsed":14579616,"rss":56373248},"pid":25492,"uid":null,"version":"v22.20.0"},"stack":"D:\\BLS\\blsnode\\src\\models\\login.model.js:103\n   const hash = await bcrypt.hash(password, saltRounds);\n                ^^^^^\n\nSyntaxError: await is only valid in async functions and the top level bodies of modules\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\controllers\\login.controller.js:1:20)","trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1638,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1680,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\src\\controllers\\login.controller.js","function":null,"line":1,"method":null,"native":false}]}
+2026-06-20 15:44:38.590 debug: Adding compression
+2026-06-20 15:44:38.592 debug: Configuring event emitter listeners.
+2026-06-20 15:46:16.877 debug: Adding compression
+2026-06-20 15:46:16.879 debug: Configuring event emitter listeners.
+2026-06-20 15:46:34.833 debug: Adding compression
+2026-06-20 15:46:34.835 debug: Configuring event emitter listeners.
+2026-06-20 15:46:48.220 debug: Adding compression
+2026-06-20 15:46:48.222 debug: Configuring event emitter listeners.
+2026-06-20 15:47:43.320 debug: Adding compression
+2026-06-20 15:47:43.323 debug: Configuring event emitter listeners.
+2026-06-20 15:47:56.521 debug: Adding compression
+2026-06-20 15:47:56.523 debug: Configuring event emitter listeners.
+2026-06-20 15:48:43.205 error: uncaughtException: password is not defined
+ReferenceError: password is not defined
+    at Login.getRegisterUser (D:\BLS\blsnode\src\models\login.model.js:102:34)
+    at exports.getRegisterUser (D:\BLS\blsnode\src\controllers\login.controller.js:115:14)
+    at Layer.handleRequest (D:\BLS\blsnode\node_modules\router\lib\layer.js:152:17)
+    at next (D:\BLS\blsnode\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\BLS\blsnode\node_modules\router\lib\route.js:117:3)
+    at handle (D:\BLS\blsnode\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\BLS\blsnode\node_modules\router\lib\layer.js:152:17)
+    at D:\BLS\blsnode\node_modules\router\index.js:295:15
+    at processParams (D:\BLS\blsnode\node_modules\router\index.js:582:12)
+    at next (D:\BLS\blsnode\node_modules\router\index.js:291:5) {"date":"Sat Jun 20 2026 15:48:43 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6142.046},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":72906,"external":3657511,"heapTotal":26959872,"heapUsed":25542928,"rss":70004736},"pid":25388,"uid":null,"version":"v22.20.0"},"stack":"ReferenceError: password is not defined\n    at Login.getRegisterUser (D:\\BLS\\blsnode\\src\\models\\login.model.js:102:34)\n    at exports.getRegisterUser (D:\\BLS\\blsnode\\src\\controllers\\login.controller.js:115:14)\n    at Layer.handleRequest (D:\\BLS\\blsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\BLS\\blsnode\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\BLS\\blsnode\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\BLS\\blsnode\\node_modules\\router\\index.js:295:15\n    at processParams (D:\\BLS\\blsnode\\node_modules\\router\\index.js:582:12)\n    at next (D:\\BLS\\blsnode\\node_modules\\router\\index.js:291:5)","trace":[{"column":34,"file":"D:\\BLS\\blsnode\\src\\models\\login.model.js","function":"Login.getRegisterUser","line":102,"method":"getRegisterUser","native":false},{"column":14,"file":"D:\\BLS\\blsnode\\src\\controllers\\login.controller.js","function":"exports.getRegisterUser","line":115,"method":"getRegisterUser","native":false},{"column":17,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\layer.js","function":"Layer.handleRequest","line":152,"method":"handleRequest","native":false},{"column":13,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"next","line":157,"method":null,"native":false},{"column":3,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\route.js","function":"Route.dispatch","line":117,"method":"dispatch","native":false},{"column":11,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"handle","line":435,"method":null,"native":false},{"column":17,"file":"D:\\BLS\\blsnode\\node_modules\\router\\lib\\layer.js","function":"Layer.handleRequest","line":152,"method":"handleRequest","native":false},{"column":15,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":null,"line":295,"method":null,"native":false},{"column":12,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"processParams","line":582,"method":null,"native":false},{"column":5,"file":"D:\\BLS\\blsnode\\node_modules\\router\\index.js","function":"next","line":291,"method":null,"native":false}]}
+2026-06-20 15:49:20.189 debug: Adding compression
+2026-06-20 15:49:20.191 debug: Configuring event emitter listeners.
+2026-06-20 15:49:53.651 debug: Adding compression
+2026-06-20 15:49:53.654 debug: Configuring event emitter listeners.
+2026-06-20 15:50:25.166 debug: Adding compression
+2026-06-20 15:50:25.168 debug: Configuring event emitter listeners.
+2026-06-20 15:50:28.457 debug: Adding compression
+2026-06-20 15:50:28.459 debug: Configuring event emitter listeners.
+2026-06-20 15:50:35.673 debug: Adding compression
+2026-06-20 15:50:35.675 debug: Configuring event emitter listeners.
+2026-06-20 15:50:56.423 debug: Adding compression
+2026-06-20 15:50:56.425 debug: Configuring event emitter listeners.
+2026-06-20 15:53:10.425 debug: Adding compression
+2026-06-20 15:53:10.427 debug: Configuring event emitter listeners.
+2026-06-20 15:53:24.741 debug: Adding compression
+2026-06-20 15:53:24.744 debug: Configuring event emitter listeners.
+2026-06-20 15:55:18.243 debug: Adding compression
+2026-06-20 15:55:18.245 debug: Configuring event emitter listeners.
+2026-06-20 15:55:21.457 debug: Adding compression
+2026-06-20 15:55:21.459 debug: Configuring event emitter listeners.
+2026-06-20 15:56:31.448 debug: Adding compression
+2026-06-20 15:56:31.450 debug: Configuring event emitter listeners.
+2026-06-20 15:57:02.158 debug: Adding compression
+2026-06-20 15:57:02.160 debug: Configuring event emitter listeners.
+2026-06-20 15:57:10.057 debug: Adding compression
+2026-06-20 15:57:10.060 debug: Configuring event emitter listeners.
+2026-06-20 15:57:16.382 debug: Adding compression
+2026-06-20 15:57:16.384 debug: Configuring event emitter listeners.
+2026-06-20 15:57:16.394 error: uncaughtException: Unexpected identifier 'insertArr'
+D:\BLS\blsnode\src\models\login.model.js:123
+    insertArr.sEmail,
+    ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'insertArr'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\controllers\login.controller.js:1:20) {"date":"Sat Jun 20 2026 15:57:16 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6655.234},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13977744,"rss":55037952},"pid":13776,"uid":null,"version":"v22.20.0"},"stack":"D:\\BLS\\blsnode\\src\\models\\login.model.js:123\n    insertArr.sEmail,\n    ^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'insertArr'\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\controllers\\login.controller.js:1:20)","trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1638,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1680,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\src\\controllers\\login.controller.js","function":null,"line":1,"method":null,"native":false}]}
+2026-06-20 15:57:16.394 error: uncaughtException: Unexpected identifier 'insertArr'
+D:\BLS\blsnode\src\models\login.model.js:123
+    insertArr.sEmail,
+    ^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'insertArr'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.require (node:internal/modules/cjs/loader:1463:12)
+    at require (node:internal/modules/helpers:147:16)
+    at Object.<anonymous> (D:\BLS\blsnode\src\controllers\login.controller.js:1:20) {"date":"Sat Jun 20 2026 15:57:16 GMT+0300 (Arabian Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6655.234},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\BLS\\blsnode\\app.js"],"cwd":"D:\\BLS\\blsnode","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18851,"external":2305319,"heapTotal":21282816,"heapUsed":13977744,"rss":55037952},"pid":13776,"uid":null,"version":"v22.20.0"},"stack":"D:\\BLS\\blsnode\\src\\models\\login.model.js:123\n    insertArr.sEmail,\n    ^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'insertArr'\n    at wrapSafe (node:internal/modules/cjs/loader:1638:18)\n    at Module._compile (node:internal/modules/cjs/loader:1680:20)\n    at Object..js (node:internal/modules/cjs/loader:1839:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1263:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at Object.<anonymous> (D:\\BLS\\blsnode\\src\\controllers\\login.controller.js:1:20)","trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1638,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1680,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1839,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1441,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1263,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":237,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1463,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":147,"method":null,"native":false},{"column":20,"file":"D:\\BLS\\blsnode\\src\\controllers\\login.controller.js","function":null,"line":1,"method":null,"native":false}]}
+2026-06-20 15:57:19.221 debug: Adding compression
+2026-06-20 15:57:19.223 debug: Configuring event emitter listeners.
+2026-06-20 15:57:26.015 debug: Adding compression
+2026-06-20 15:57:26.017 debug: Configuring event emitter listeners.
+2026-06-20 15:57:28.840 debug: Adding compression
+2026-06-20 15:57:28.843 debug: Configuring event emitter listeners.
+2026-06-20 15:57:31.340 debug: Adding compression
+2026-06-20 15:57:31.342 debug: Configuring event emitter listeners.
+2026-06-20 16:06:56.675 debug: Adding compression
+2026-06-20 16:06:56.678 debug: Configuring event emitter listeners.
+2026-06-20 16:11:09.791 debug: Adding compression
+2026-06-20 16:11:09.793 debug: Configuring event emitter listeners.
+2026-06-20 16:11:39.677 debug: Adding compression
+2026-06-20 16:11:39.679 debug: Configuring event emitter listeners.
+2026-06-20 16:11:46.389 debug: Adding compression
+2026-06-20 16:11:46.392 debug: Configuring event emitter listeners.
+2026-06-20 16:12:01.828 debug: Adding compression
+2026-06-20 16:12:01.830 debug: Configuring event emitter listeners.
+2026-06-20 16:12:07.107 debug: Adding compression
+2026-06-20 16:12:07.110 debug: Configuring event emitter listeners.
+2026-06-20 16:12:14.613 debug: Adding compression
+2026-06-20 16:12:14.615 debug: Configuring event emitter listeners.
+2026-06-20 16:13:46.950 debug: Adding compression
+2026-06-20 16:13:46.952 debug: Configuring event emitter listeners.
+2026-06-20 16:14:12.600 debug: Adding compression
+2026-06-20 16:14:12.602 debug: Configuring event emitter listeners.
+2026-06-20 16:18:46.843 debug: Adding compression
+2026-06-20 16:18:46.845 debug: Configuring event emitter listeners.
+2026-06-20 16:18:59.556 debug: Adding compression
+2026-06-20 16:18:59.558 debug: Configuring event emitter listeners.
+2026-06-20 16:19:26.556 debug: Adding compression
+2026-06-20 16:19:26.558 debug: Configuring event emitter listeners.
+2026-06-20 16:19:28.974 debug: Adding compression
+2026-06-20 16:19:28.976 debug: Configuring event emitter listeners.
+2026-06-20 16:20:18.475 debug: Adding compression
+2026-06-20 16:20:18.477 debug: Configuring event emitter listeners.
+2026-06-20 16:20:20.032 debug: Adding compression
+2026-06-20 16:20:20.034 debug: Configuring event emitter listeners.
+2026-06-20 16:20:27.642 debug: Adding compression
+2026-06-20 16:20:27.644 debug: Configuring event emitter listeners.
+2026-06-20 16:20:43.633 debug: Adding compression
+2026-06-20 16:20:43.636 debug: Configuring event emitter listeners.
+2026-06-20 16:20:51.559 debug: Adding compression
+2026-06-20 16:20:51.561 debug: Configuring event emitter listeners.
+2026-06-20 16:21:11.172 debug: Adding compression
+2026-06-20 16:21:11.175 debug: Configuring event emitter listeners.
+2026-06-20 16:21:15.557 debug: Adding compression
+2026-06-20 16:21:15.560 debug: Configuring event emitter listeners.
+2026-06-20 16:23:24.956 debug: Adding compression
+2026-06-20 16:23:24.958 debug: Configuring event emitter listeners.
+2026-06-20 16:24:13.041 debug: Adding compression
+2026-06-20 16:24:13.044 debug: Configuring event emitter listeners.
+2026-06-20 16:24:15.590 debug: Adding compression
+2026-06-20 16:24:15.592 debug: Configuring event emitter listeners.
+2026-06-20 16:24:24.241 debug: Adding compression
+2026-06-20 16:24:24.243 debug: Configuring event emitter listeners.
+2026-06-20 17:17:49.941 debug: Adding compression
+2026-06-20 17:17:49.943 debug: Configuring event emitter listeners.

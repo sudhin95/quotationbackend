@@ -11,6 +11,7 @@ const jwt = require("jsonwebtoken");
 // const date = require("date-and-time");
 // const functionClass = require("../middleware/functions");
 const { Console } = require("console");
+const { el } = require("date-fns/locale");
 
 exports.getLoginUser = (req, res) => {
 
@@ -20,21 +21,38 @@ exports.getLoginUser = (req, res) => {
     };
   
   loginModel.checkUserValid(resp,(err,data)=>{
+    console.log("data",data)
 
       if (err || data.length == 0) {
-        if (err.kind === "not_found") {
+        if (err.kind === "username_not_found") {
 
             let dataResp = {
                 return_status: false,
                 return_code: 56301,
                 return_message:
-                err.message || `Not found user with this username or password`,
+                err.message || `Not found user with this username`,
             };
             res.status(404).send({ header: dataResp, body: [] });
-          // res.status(404).send({
-          //   message: "Not found user with this username or password",
-          // });
-        } else {
+      
+        } else if (err.kind === "wrong_password") {
+
+            let dataResp = {    
+                 return_status: false,
+                return_code: 56301,
+                return_message:
+                err.message || `Password is incorrect`,
+            };
+            res.status(404).send({ header: dataResp, body: [] });
+        } else if (err.kind === "not_approved") {
+              let dataResp = {    
+                 return_status: false,
+                return_code: 56301,
+                return_message:
+                err.message || `Admin not approved your account yet. Please contact administrator.`,
+            };
+            res.status(404).send({ header: dataResp, body: [] });
+        }
+        else {
           res.status(500).send({
             message: err,
           });
@@ -101,4 +119,49 @@ exports.getSideMenus = (req, res) => {
     }
   });
 };
+
+exports.getRegisterUser = (req, res) => {
+  var postarr = req.body.arr;
+  loginModel.getRegisterUser(postarr, (err, data) => {
+    if (err) {
+      if(err.kind === "already_exist"){
+        var dataResp = {
+        return_status: true,
+        return_code: 55332,
+        return_message:
+          err.message || "user with this email or phone number or username already exist.",
+      };
+
+      }else{
+          var dataResp = {
+            return_status: true,
+            return_code: 55332,
+            return_message:
+              err.message || "Some error occurred while retrieving Support.",
+          };
+      }
+      res.status(404).send({ header: dataResp, body: [] });
+    } else {
+      if (data.kind === "success") {
+         var dataResp = {
+          return_status: true,
+          return_code: 55333,
+          return_message: "User Registered Successfully & Email Sent",
+        };
+      } else{
+         var dataResp = {
+          return_status: true,
+          return_code: 55333,
+          return_message: "User Registered Successfully & Email Sending Failed",
+        };
+      }
+      res.status(200).send({
+        header: dataResp,
+        body: data.body,
+      });
+    }
+  });
+};
+
+
 
