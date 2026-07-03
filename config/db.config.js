@@ -25,8 +25,8 @@ DbModel.getConnectDb = () => {
   const DBPORT =  3306;
   const DBHOST = "localhost";
   const DBUSER = "root";
-  const DBPASSWORD = "root";
-  const DBNAME = "db_bahrainlocalsearch"; // your single DB
+  const DBPASSWORD = "";
+  const DBNAME = "db_quotation"; // your single DB
 
   const pool = createPool({
     port: DBPORT,

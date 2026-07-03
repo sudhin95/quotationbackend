@@ -21,7 +21,6 @@ authMiddleware.verifyToken = (req, res, next) => {
                         res.status(401).send({ return_message: "Authentication failed, Invalid token provided", return_status: false, return_code: 10002 })
                     } else {
                          authMiddleware.userId = data.userId;
-                         authMiddleware.settings = data.settings;
                         next();
                     }
                 });
@@ -32,41 +31,26 @@ authMiddleware.verifyToken = (req, res, next) => {
 
 authMiddleware.checkUserSessionValid = (sLoginSessionJWT, result) => {
     const conn = DbModel.getConnectDb();
-    conn.query(`SELECT bls_users.*
-        FROM bls_loginuserwisetokenauthentication	          
-        LEFT JOIN bls_users ON bls_users.ID = bls_loginuserwisetokenauthentication.iUserId 
-        WHERE bls_loginuserwisetokenauthentication.sToken = '${sLoginSessionJWT}'  `, async (err, res) => {
+    conn.query(`SELECT users.*
+        FROM loginuserwisetokenauthentication	          
+        LEFT JOIN users ON users.ID = loginuserwisetokenauthentication.iUserId 
+        WHERE loginuserwisetokenauthentication.sToken = '${sLoginSessionJWT}'  `, async (err, res) => {
         if (err) {
             result(err, null);
             return;
         }
         if (res.length) {
-            var settingsArr = await getDetailsSettings();
-            result(null, { userId: res[0]['ID'],settings:settingsArr[0] });
+            result(null, { userId: res[0]['ID'] });
             return;
         }
         result({ data: "not_found" }, null);
     });
 
 };
-function getDetailsSettings() {
-    const conn = DbModel.getConnectDb();
-    return new Promise((resolve, reject) => {
-        var queryString = `SELECT * FROM bls_settings WHERE  1=1`;
-        conn.query(queryString, (error, results) => {
-            conn.end();
-            if (error) {
-                return reject(error);
-            }
-            return resolve(results);
-        });
-    })
-}
+
 
 authMiddleware.setMyValues = (data, res, next) => {
     authMiddleware.userId = data.userId;
-    authMiddleware.roleId = data.roleId;
-    authMiddleware.currencyId = data.currencyId;
-    authMiddleware.settings = data.settings;
+
 };
 module.exports = authMiddleware;

@@ -14,14 +14,13 @@ const { Console } = require("console");
 const { el } = require("date-fns/locale");
 
 exports.getLoginUser = (req, res) => {
-
+console.log("req.body", req.body);
     let resp = {
         username: req.body.username,
         password: req.body.password,
     };
   
   loginModel.checkUserValid(resp,(err,data)=>{
-    console.log("data",data)
 
       if (err || data.length == 0) {
         if (err.kind === "username_not_found") {
@@ -83,7 +82,7 @@ exports.getLoginUser = (req, res) => {
                         return_data: data,
                         auth_token: token,
                         };
-                    res.status(200).send({ header: dataNew, body: dataNew });
+                    res.status(200).send({ header: [], body: dataNew });
                     }
             });
 

@@ -34,15 +34,19 @@ app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 
 const port = 5200
 const loginRouter = require('./src/routes/login.route');
-
+const clientsRouter = require('./src/routes/clients.route');
+const quotationsRouter = require('./src/routes/quotations.route');
 
 app.use(express.static("webroot"));
-app.use('/api/v1/login', loginRouter);
+app.use('/api/v1/auth', loginRouter);
+app.use('/api/v1/clients',clientsRouter);
+app.use('/api/v1/quotations',quotationsRouter);
+
 
 
 
 app.all('/', function (req, res) {
-  res.json({ message: "Welcome to Bahrain Local Search APIs" });
+  res.json({ message: "Welcome to Quotation APIs" });
 });
 app.listen(port, () => {
   // console.log(`Server is running on port  ${port}`);
