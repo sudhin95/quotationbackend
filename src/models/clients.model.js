@@ -11,7 +11,7 @@ const Clients = function (clients) {};
 
 Clients.getAllClients = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
-    var qry="SELECT clients.ID,clients.sClientName,clients.sCompanyName,clients.sEmail,clients.sPhoneNumber,clients.sNotes,clients.iStatus,clients.dtCreatedOn FROM clients WHERE clients.iStatus = 1 ORDER BY dtCreatedOn DESC";
+    var qry="SELECT clients.ID as id,clients.sClientName as name,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,clients.iStatus as status,clients.dtCreatedOn as createdAt FROM clients WHERE clients.iStatus = 1 ORDER BY dtCreatedOn DESC";
     conn.query(qry,(err,res)=>{
         if(err){
         result(err,null);
@@ -20,7 +20,7 @@ Clients.getAllClients = (postArr, result) => {
         if(res){
         if(res.length>0){
             for(let element of res){
-                element.clientid = functionsClass.encrypt(element.ID);
+                element.clientid = functionsClass.encrypt(element.id);
             }
             result(null,res);
             return;
@@ -85,6 +85,32 @@ Clients.deleteClients = (deleteID, result) => {
         }
         result(null, res);
     });
+}
+
+Clients.getClientsById = (id, result) => {
+    const conn = DbModel.getConnectDb();  
+    var clientid = functionsClass.decrypt(id);
+    var qry="SELECT clients.ID as id,clients.sClientName as name,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,clients.iStatus as status,clients.dtCreatedOn as createdAt FROM clients WHERE clients.ID = ?";
+    conn.query(qry,[clientid],(err,res)=>{
+        if(err){
+        result(err,null);
+        return;
+        }
+        if(res){
+            console.log("res",res)
+        if(res.length>0){
+            for(let element of res){
+                element.clientid = functionsClass.encrypt(element.id);
+            }
+            result(null,res);
+            return;
+        }else{
+            result(null,[]);
+            return;
+        }
+        }
+    })
+
 }
 
 

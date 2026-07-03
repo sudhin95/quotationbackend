@@ -10,7 +10,7 @@ const saltRounds = 10;
 const Quotations = function (quotations) {};
 Quotations.getAllQuotations = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
-    var qry=`SELECT quotations.ID,quotations.sQuotationNumber,quotations.sTitle,quotations.fTotalAmount,quotations.iStatus,quotations.dtCreatedOn,quotations.iCreatedBy,clients.sClientName,clients.sCompanyName,clients.sEmail,clients.sPhoneNumber,clients.sNotes
+    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotationnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as status,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as createdname,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes
     FROM quotations 
     LEFT JOIN clients ON quotations.iClientId = clients.ID 
     WHERE 1=1 ORDER BY quotations.dtCreatedOn DESC`;
@@ -22,7 +22,16 @@ Quotations.getAllQuotations = (postArr, result) => {
         if(res){
         if(res.length>0){
             for(let element of res){
-                element.quotationid = functionsClass.encrypt(element.ID);
+                element.quotationid = functionsClass.encrypt(element.id);
+                if(element.status==0){
+                    element.statusname = "Draft";
+                }else if(element.status==1){
+                    element.statusname = "Sent";
+                }else if(element.status==2){
+                    element.statusname="Approved";
+                }else{
+                    element.statusname="Rejected";
+                }
             }
             result(null,res);
             return;
@@ -39,25 +48,28 @@ Quotations.addQuotations = async (postArr, result) => {
     const now = new Date();
     var dtCreatedOn = date.format(now, "YYYY-MM-DD HH:mm:ss");
 
-     var quotationnumber = await functionsClass.getNamesWithConn(
-        conn,
-        `quotations`,
-        `sQuotationNumber`,
-        `1=1 ORDER BY ID DESC`
-    );
+     var quotdate = functionsClass.formatDateString(postArr.quotationDate);
 
-    console.log("quotationnumber", quotationnumber)
-    if(quotationnumber == "" || quotationnumber == null || quotationnumber == undefined){
-        quotationnumber = 1000;
-    }else{
-            var quotationnumber = parseInt(quotationnumber) + 1; 
 
-    }   
+    //  var quotationnumber = await functionsClass.getNamesWithConn(
+    //     conn,
+    //     `quotations`,
+    //     `sQuotationNumber`,
+    //     `1=1 ORDER BY ID DESC`
+    // );
+
+    // console.log("quotationnumber", quotationnumber)
+    // if(quotationnumber == "" || quotationnumber == null || quotationnumber == undefined){
+    //     quotationnumber = 1000;
+    // }else{
+    //         var quotationnumber = parseInt(quotationnumber) + 1; 
+
+    // }   
 
     clientid = functionsClass.decrypt(postArr.clientid);
     
-    var sql = `INSERT INTO quotations (sQuotationNumber, sTitle, fTotalAmount, iStatus, dtCreatedOn, iClientId, iCreatedBy) VALUES (?, ?, ?, ?, ?, ?, ?)`;
-    conn.query(sql, [quotationnumber, postArr.title, postArr.totalamount, 0, dtCreatedOn, clientid, 1], async (err, res) => {
+    var sql = `INSERT INTO quotations (sQuotationNumber, sTitle, fTotalAmount, iStatus, dtCreatedOn, dtQuotationDate, iClientId, iCreatedBy) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
+    conn.query(sql, [postArr.quotnumber, postArr.title, postArr.totalamount, 0, dtCreatedOn, quotdate, clientid, 1], async (err, res) => {
         if (err) {
             result(err, null);
             return;
@@ -73,6 +85,7 @@ Quotations.addQuotations = async (postArr, result) => {
 }
 
 function insertQuotationDetails(conn, quotationId, quotationDetails) {
+    console.log("phonenumber", quotationDetails )
     return new Promise((resolve, reject) => {
         const now = new Date();
         const dtCreatedOn = date.format(now, "YYYY-MM-DD HH:mm:ss");
@@ -98,7 +111,7 @@ function insertQuotationDetails(conn, quotationId, quotationDetails) {
 }
 
 Quotations.updateQuotations = async (editId, postArr, result) => {
-    console.log("editId", editId);
+    console.log("editId", postArr);
 
     const conn = DbModel.getConnectDb();
     const now = new Date();
@@ -113,7 +126,8 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
             sTitle = ?, 
             fTotalAmount = ?, 
             iStatus = ?, 
-            iCreatedBy = ?
+            iCreatedBy = ?,
+            dtQuotationDate = ?
         WHERE ID = ?
     `;
 
@@ -122,6 +136,7 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
         postArr.totalamount,
         postArr.status,
         1,
+        postArr.quotationDate,
         quotationId
     ], async (err, res) => {
 
@@ -163,7 +178,7 @@ function deleteQuotationDetails(conn, quotationId) {
 Quotations.getQuotationsById = (quotId, result) => {
     const conn = DbModel.getConnectDb();
     const quotationId = functionsClass.decrypt(quotId);
-    var qry=`SELECT quotations.ID,quotations.sQuotationNumber,quotations.sTitle,quotations.fTotalAmount,quotations.iStatus,quotations.dtCreatedOn,quotations.iCreatedBy,clients.sClientName,clients.sCompanyName,clients.sEmail,clients.sPhoneNumber,clients.sNotes
+    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as statusid,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as clientname,clients.sCompanyName as companyname,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,quotations.iClientId as client_id,quotations.dtQuotationDate as quotationDate
     FROM quotations 
     LEFT JOIN clients ON quotations.iClientId = clients.ID 
     WHERE quotations.ID = ?`;
@@ -175,7 +190,20 @@ Quotations.getQuotationsById = (quotId, result) => {
         if(res){
         if(res.length>0){
          var items = await getQuotationDetailsById(conn, quotationId);
+          const clientid = functionsClass.encrypt(res[0].client_id);
          res[0].items = items;
+         res[0].clientid = clientid;
+
+         if(res[0].statusid==0){
+            res[0].status = "Draft";
+        }else if(res[0].statusid==1){
+            res[0].status = "Sent";
+        }else if(res[0].statusid==2){
+            res[0].status="Approved";
+        }else{    
+            res[0].status="Rejected";
+        }
+
          
             result(null,res);
             return;
@@ -188,7 +216,7 @@ Quotations.getQuotationsById = (quotId, result) => {
 }
 function getQuotationDetailsById(conn, quotationId) {
     return new Promise((resolve, reject) => {
-        const sql = `SELECT sTitle,sDescription,fQuantity,fUnitPrice,fTotalPrice FROM quotation_details WHERE iQuotationId = ?`;  
+        const sql = `SELECT sTitle as title,sDescription as description,fQuantity as quantity,fUnitPrice as unitprice,fTotalPrice as totalprice FROM quotation_details WHERE iQuotationId = ?`;  
         conn.query(sql, [quotationId], (err, res) => {
             if (err) return reject(err);
             resolve(res);
@@ -196,6 +224,7 @@ function getQuotationDetailsById(conn, quotationId) {
     });
 }
 Quotations.deleteQuotations = (deleteID, result) => {
+    console.log("deleteID", deleteID)
     const conn = DbModel.getConnectDb(); 
     var quotationid = functionsClass.decrypt(deleteID);
     console.log("quotationid", quotationid);

@@ -254,6 +254,24 @@ const getNamesWithConn = (conn, table_name, column, where = "") => {
   });
 };
 
+function formatDateString(isoString) {
+  if (!isoString) return '';
+
+  const date = new Date(isoString);
+  if (isNaN(date.getTime())) return '';
+
+  const pad = (n) => n.toString().padStart(2, '0');
+
+  const yyyy = date.getFullYear();
+  const mm = pad(date.getMonth() + 1);
+  const dd = pad(date.getDate());
+  const hh = pad(date.getHours());
+  const mi = pad(date.getMinutes());
+  const ss = pad(date.getSeconds());
+
+  return `${yyyy}-${mm}-${dd} ${hh}:${mi}:${ss}`;
+}
+
 module.exports = {
   encrypt,
   decrypt,
@@ -265,5 +283,6 @@ module.exports = {
   formatDateShortMonth,
   getfilterStartAndEndOfDayInUTC,
   formatAnyDate,
-  getNamesWithConn
+  getNamesWithConn,
+  formatDateString
 }
