@@ -169,5 +169,32 @@ exports.getAllQuotationItems = (req, res) => {
     }
   });
 };
+exports.generateQuotationDraft = (req, res) => {
+  console.log("req.body", req.body);
+  quotationsModel.generateQuotationDraft(req.body, (err, data) => {
+    if (err) {
+      let dataResp = {
+        return_status: true,
+        return_code: 55332,
+        return_message:
+          err.message || "Some error occurred while retrieving Support.",
+      };
+      res.status(500).send({
+        header: dataResp,
+        body: [],
+      });
+    } else {
+      let dataResp = {
+        return_status: true,
+        return_code: 55333,
+        return_message: "Quotation items retrieved successfully",
+      };
+      res.status(200).send({
+        header: dataResp,
+        body: data,
+      });
+    }
+  });
+};
 
 

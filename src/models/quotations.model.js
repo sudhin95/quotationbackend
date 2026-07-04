@@ -7,6 +7,12 @@ const date = require("date-and-time");
 const dateTime = require("node-datetime");
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
+
+// const { generateQuotationDraft } = require('../services/openaiService.js');
+const { generateQuotationDraft } = require('../services/geminiService.js');
+
+// import { generateQuotationDraft } from "../services/geminiService.js";
+// import { generateQuotationDraft } from "../services/openaiService.js";
 const Quotations = function (quotations) {};
 Quotations.getAllQuotations = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
@@ -262,6 +268,69 @@ Quotations.getAllQuotationItems = (quotId, result) => {
         }
     })
 }
+
+Quotations.generateQuotationDraft = async (req, result) => {
+  try {
+    // const requestText = req?.body?.title || req?.body?.request;
+
+      const  requestText  = req.title;
+
+    if (!requestText) {
+      return result(new Error("Request text is required"), null);
+    }
+
+    const aiResponse = await generateQuotationDraft(requestText);
+
+    console.log("AI RAW RESPONSE:", aiResponse);
+
+    // Try to parse JSON safely
+    let parsed;
+    try {
+      parsed =
+        typeof aiResponse === "string"
+          ? JSON.parse(aiResponse)
+          : aiResponse;
+    } catch (parseErr) {
+      console.error("JSON Parse Error:", parseErr.message);
+
+      return result(null, {
+        raw: aiResponse,
+        warning: "AI returned invalid JSON"
+      });
+    }
+
+    return result(null, parsed);
+  } catch (err) {
+    console.error("generateQuotationDraft Error:", err);
+
+    return result(err, null);
+  }
+};
+
+// Quotations.generateQuotationDraft = async (req, result) => {
+
+//             try {
+//             const  requestText  = req.title;
+
+
+//             const res = await generateQuotationDraft(requestText);
+//             console.log("res", res)
+//             if(res){
+//                 result(null,res);
+//                 return;
+//             }else{
+//                 result(null,[]);
+//                 return;
+//             }
+//         } catch (err) {
+//             console.error(err);
+//             result(err, null);
+//             return
+//         }
+
+// }
+
+
 
 
 module.exports = Quotations;

@@ -9,6 +9,7 @@ router.put('/:id', authMiddleware.verifyToken,quotationscontroller.updateQuotati
 router.get('/:id', authMiddleware.verifyToken,quotationscontroller.getQuotationsById);
 router.delete('/:id', authMiddleware.verifyToken,quotationscontroller.deleteQuotations);
 router.post('/:id/items', authMiddleware.verifyToken,quotationscontroller.getAllQuotationItems);
+router.post('/ai/quotation-draft',quotationscontroller.generateQuotationDraft);
 
 
 
