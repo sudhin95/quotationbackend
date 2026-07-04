@@ -202,12 +202,10 @@ function getCurrentStatus(conn, quotationId) {
 
 async function notifyQuotationApproved(conn, quotationId, postArr) {
     const webhookUrl = process.env.N8N_APPROVAL_WEBHOOK_URL;
-console.log("webhookUrl", webhookUrl)
     if (!webhookUrl) {
         console.error('N8N_APPROVAL_WEBHOOK_URL is not configured');
         return;
     }
-
     // Pull client details for a useful notification payload
     const details = await getQuotationSummaryForNotification(conn, quotationId);
 
