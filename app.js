@@ -36,12 +36,13 @@ const port = 5200
 const loginRouter = require('./src/routes/login.route');
 const clientsRouter = require('./src/routes/clients.route');
 const quotationsRouter = require('./src/routes/quotations.route');
+const aiLogsRouter = require('./src/routes/ailogs.route');
 
 app.use(express.static("webroot"));
 app.use('/api/v1/auth', loginRouter);
 app.use('/api/v1/clients',clientsRouter);
 app.use('/api/v1/quotations',quotationsRouter);
-
+app.use('/api/v1/ai-logs',aiLogsRouter);
 
 
 
