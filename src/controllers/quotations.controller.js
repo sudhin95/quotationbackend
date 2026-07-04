@@ -173,13 +173,13 @@ exports.generateQuotationDraft = (req, res) => {
   console.log("req.body", req.body);
   quotationsModel.generateQuotationDraft(req.body, (err, data) => {
     if (err) {
-      let dataResp = {
+      var dataResp = {
         return_status: true,
         return_code: 55332,
         return_message:
           err.message || "Some error occurred while retrieving Support.",
       };
-      res.status(500).send({
+      res.status(err.status).send({
         header: dataResp,
         body: [],
       });

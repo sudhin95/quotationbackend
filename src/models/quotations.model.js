@@ -7,16 +7,15 @@ const date = require("date-and-time");
 const dateTime = require("node-datetime");
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-
-// const { generateQuotationDraft } = require('../services/openaiService.js');
 const { generateQuotationDraft } = require('../services/geminiService.js');
+const { validateQuotationDraft } = require('../services/quotationValidation.js');
+const axios = require('axios');
 
-// import { generateQuotationDraft } from "../services/geminiService.js";
-// import { generateQuotationDraft } from "../services/openaiService.js";
+
 const Quotations = function (quotations) {};
 Quotations.getAllQuotations = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
-    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotationnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as status,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as createdname,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes
+    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotationnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as status,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as createdname,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,quotations.sDescription as description 
     FROM quotations 
     LEFT JOIN clients ON quotations.iClientId = clients.ID 
     WHERE 1=1 ORDER BY quotations.dtCreatedOn DESC`;
@@ -74,8 +73,8 @@ Quotations.addQuotations = async (postArr, result) => {
 
     clientid = functionsClass.decrypt(postArr.clientid);
     
-    var sql = `INSERT INTO quotations (sQuotationNumber, sTitle, fTotalAmount, iStatus, dtCreatedOn, dtQuotationDate, iClientId, iCreatedBy) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
-    conn.query(sql, [postArr.quotnumber, postArr.title, postArr.totalamount, 0, dtCreatedOn, quotdate, clientid, 1], async (err, res) => {
+    var sql = `INSERT INTO quotations (sQuotationNumber, sTitle, fTotalAmount, iStatus, dtCreatedOn, dtQuotationDate, sDescription, iClientId, iCreatedBy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+    conn.query(sql, [postArr.quotnumber, postArr.title, postArr.totalamount, 0, dtCreatedOn, quotdate, postArr.description, clientid, 1], async (err, res) => {
         if (err) {
             result(err, null);
             return;
@@ -126,6 +125,14 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
     const quotationId = functionsClass.decrypt(editId);
 
 
+      let previousStatus;
+    try {
+        previousStatus = await getCurrentStatus(conn, quotationId);
+    } catch (err) {
+        return result(err, null);
+    }
+
+
     const sql = `
         UPDATE quotations 
         SET 
@@ -133,7 +140,8 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
             fTotalAmount = ?, 
             iStatus = ?, 
             iCreatedBy = ?,
-            dtQuotationDate = ?
+            dtQuotationDate = ?,
+            sDescription = ?
         WHERE ID = ?
     `;
 
@@ -143,6 +151,7 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
         postArr.status,
         1,
         postArr.quotationDate,
+        postArr.description,
         quotationId
     ], async (err, res) => {
 
@@ -158,6 +167,17 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
             // STEP 2: insert new details
             await insertQuotationDetails(conn, quotationId, postArr.items);
 
+            const newStatus = Number(postArr.status);
+            const wasApproved = Number(previousStatus) === 2;
+            const isNowApproved = newStatus === 2;
+
+            if (isNowApproved && !wasApproved) {
+                // Fire-and-forget: don't let webhook failure block the response
+                notifyQuotationApproved(conn, quotationId, postArr).catch(webhookErr => {
+                    console.error('n8n webhook failed (non-blocking):', webhookErr.message);
+                });
+            }
+
             result(null, res);
 
         } catch (error) {
@@ -165,6 +185,66 @@ Quotations.updateQuotations = async (editId, postArr, result) => {
         }
     });
 };
+
+function getCurrentStatus(conn, quotationId) {
+    return new Promise((resolve, reject) => {
+        conn.query(
+            `SELECT iStatus FROM quotations WHERE ID = ?`,
+            [quotationId],
+            (err, rows) => {
+                if (err) return reject(err);
+                if (!rows.length) return reject(new Error('Quotation not found'));
+                resolve(rows[0].iStatus);
+            }
+        );
+    });
+}
+
+async function notifyQuotationApproved(conn, quotationId, postArr) {
+    const webhookUrl = process.env.N8N_APPROVAL_WEBHOOK_URL;
+console.log("webhookUrl", webhookUrl)
+    if (!webhookUrl) {
+        console.error('N8N_APPROVAL_WEBHOOK_URL is not configured');
+        return;
+    }
+
+    // Pull client details for a useful notification payload
+    const details = await getQuotationSummaryForNotification(conn, quotationId);
+
+    try {
+        await axios.post(webhookUrl, {
+            quotationId,
+            quotationNumber: details.quotationnumber,
+            title: postArr.title,
+            totalAmount: postArr.totalamount,
+            clientName: details.clientname,
+            companyName: details.companyname,
+            approvedAt: functionsClass.formatDate(new Date())
+        }, { timeout: 10000 });
+    } catch (err) {
+        if (err.code === 'ECONNABORTED') {
+            throw new Error('n8n webhook timed out');
+        }
+        throw new Error('n8n webhook request failed: ' + err.message);
+    }
+}
+
+function getQuotationSummaryForNotification(conn, quotationId) {
+    return new Promise((resolve, reject) => {
+        const qry = `
+            SELECT quotations.sQuotationNumber as quotationnumber,
+                   clients.sClientName as clientname,
+                   clients.sCompanyName as companyname
+            FROM quotations
+            LEFT JOIN clients ON quotations.iClientId = clients.ID
+            WHERE quotations.ID = ?
+        `;
+        conn.query(qry, [quotationId], (err, rows) => {
+            if (err) return reject(err);
+            resolve(rows[0] || {});
+        });
+    });
+}
 
 function deleteQuotationDetails(conn, quotationId) {
     return new Promise((resolve, reject) => {
@@ -184,7 +264,7 @@ function deleteQuotationDetails(conn, quotationId) {
 Quotations.getQuotationsById = (quotId, result) => {
     const conn = DbModel.getConnectDb();
     const quotationId = functionsClass.decrypt(quotId);
-    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as statusid,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as clientname,clients.sCompanyName as companyname,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,quotations.iClientId as client_id,quotations.dtQuotationDate as quotationDate
+    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as statusid,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as clientname,clients.sCompanyName as companyname,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,quotations.iClientId as client_id,quotations.dtQuotationDate as quotationDate,quotations.sDescription as description
     FROM quotations 
     LEFT JOIN clients ON quotations.iClientId = clients.ID 
     WHERE quotations.ID = ?`;
@@ -270,42 +350,85 @@ Quotations.getAllQuotationItems = (quotId, result) => {
 }
 
 Quotations.generateQuotationDraft = async (req, result) => {
-  try {
-    // const requestText = req?.body?.title || req?.body?.request;
+    const requestText = req.title;
 
-      const  requestText  = req.title;
-
-    if (!requestText) {
-      return result(new Error("Request text is required"), null);
+    if (!requestText || typeof requestText !== "string" || !requestText.trim()) {
+        return result({ status: 400, message: "Request text is required" }, null);
+   
     }
 
-    const aiResponse = await generateQuotationDraft(requestText);
+    let aiResponse;
+    try {
+        aiResponse = await generateQuotationDraft(requestText.trim());
+    } catch (err) {
+        console.error("AI call failed:", err.message);
 
-    console.log("AI RAW RESPONSE:", aiResponse);
+        if (err.message.startsWith("PROMPT_TEMPLATE_MISSING")) {
+            return result({ status: 500, message: "Server configuration error" }, null);
+        }
+        if (err.message.startsWith("AI_EMPTY_RESPONSE")) {
+            return result({ status: 502, message: "AI returned no content. Please try again." }, null);
+        }
+        // AI_CALL_FAILED or anything else — treat as upstream/service failure
+        return result({ status: 502, message: "AI service is currently unavailable. Please try again shortly." }, null);
+    }
 
-    // Try to parse JSON safely
     let parsed;
     try {
-      parsed =
-        typeof aiResponse === "string"
-          ? JSON.parse(aiResponse)
-          : aiResponse;
+        parsed = typeof aiResponse === "string" ? JSON.parse(aiResponse) : aiResponse;
     } catch (parseErr) {
-      console.error("JSON Parse Error:", parseErr.message);
-
-      return result(null, {
-        raw: aiResponse,
-        warning: "AI returned invalid JSON"
-      });
+        console.error("JSON Parse Error:", parseErr.message);
+        return result({ status: 502, message: "AI returned an unreadable response. Please try again." }, null);
     }
 
-    return result(null, parsed);
-  } catch (err) {
-    console.error("generateQuotationDraft Error:", err);
+    let validated;
+    try {
+        validated = validateQuotationDraft(parsed);
+    } catch (validationErr) {
+        console.error("AI response failed validation:", validationErr.message);
+        return result({ status: 502, message: "AI response was invalid. Please rephrase and try again." }, null);
+    }
 
-    return result(err, null);
-  }
+    return result(null, validated);
 };
+
+// Quotations.generateQuotationDraft = async (req, result) => {
+//   try {
+//     // const requestText = req?.body?.title || req?.body?.request;
+
+//       const  requestText  = req.title;
+
+//     if (!requestText) {
+//       return result(new Error("Request text is required"), null);
+//     }
+
+//     const aiResponse = await generateQuotationDraft(requestText);
+
+//     console.log("AI RAW RESPONSE:", aiResponse);
+
+//     // Try to parse JSON safely
+//     let parsed;
+//     try {
+//       parsed =
+//         typeof aiResponse === "string"
+//           ? JSON.parse(aiResponse)
+//           : aiResponse;
+//     } catch (parseErr) {
+//       console.error("JSON Parse Error:", parseErr.message);
+
+//       return result(null, {
+//         raw: aiResponse,
+//         warning: "AI returned invalid JSON"
+//       });
+//     }
+
+//     return result(null, parsed);
+//   } catch (err) {
+//     console.error("generateQuotationDraft Error:", err);
+
+//     return result(err, null);
+//   }
+// };
 
 // Quotations.generateQuotationDraft = async (req, result) => {
 

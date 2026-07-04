@@ -1,0 +1,97 @@
+{
+  "name": "Quotation Approved Notification",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "quotation-approved",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "1f2a3b4c-0001-4a1a-9c1a-000000000001",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [280, 300],
+      "webhookId": "quotation-approved"
+    },
+    {
+      "parameters": {
+        "fromEmail": "notifications@yourcompany.com",
+        "toEmail": "sales@yourcompany.com",
+        "subject": "=Quotation {{ $json.quotationNumber }} Approved",
+        "text": "=Quotation {{ $json.quotationNumber }} for {{ $json.clientName }} ({{ $json.companyName }}) has been approved.\n\nTitle: {{ $json.title }}\nTotal Amount: {{ $json.totalAmount }}\nApproved At: {{ $json.approvedAt }}",
+        "options": {}
+      },
+      "id": "1f2a3b4c-0002-4a1a-9c1a-000000000002",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [520, 220],
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_WITH_YOUR_SMTP_CREDENTIAL_ID",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=✅ *Quotation Approved*\n*Number:* {{ $json.quotationNumber }}\n*Client:* {{ $json.clientName }} ({{ $json.companyName }})\n*Title:* {{ $json.title }}\n*Total:* {{ $json.totalAmount }}\n*Approved At:* {{ $json.approvedAt }}",
+        "options": {}
+      },
+      "id": "1f2a3b4c-0003-4a1a-9c1a-000000000003",
+      "name": "Send Slack Notification",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [520, 380],
+      "webhookId": "",
+      "credentials": {
+        "slackApi": {
+          "id": "REPLACE_WITH_YOUR_SLACK_CREDENTIAL_ID",
+          "name": "Slack account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"success\": true, \"message\": \"Notification sent\" } }}",
+        "options": {}
+      },
+      "id": "1f2a3b4c-0004-4a1a-9c1a-000000000004",
+      "name": "Respond Success",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [760, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          { "node": "Send Email", "type": "main", "index": 0 },
+          { "node": "Send Slack Notification", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Send Email": {
+      "main": [
+        [{ "node": "Respond Success", "type": "main", "index": 0 }]
+      ]
+    },
+    "Send Slack Notification": {
+      "main": [
+        [{ "node": "Respond Success", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "instanceId": "REPLACE_WITH_YOUR_INSTANCE_ID"
+  }
+}
