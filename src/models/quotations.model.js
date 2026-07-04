@@ -358,6 +358,7 @@ Quotations.generateQuotationDraft = async (req, result) => {
     let aiResponse;
     try {
         aiResponse = await generateQuotationDraft(requestText.trim());
+        console.log("AI RAW RESPONSE:", aiResponse);
     } catch (err) {
         console.error("AI call failed:", err.message);
 
