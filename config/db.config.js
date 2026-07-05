@@ -22,11 +22,18 @@ DbModel.getConnectDb = () => {
     return DbModel.pool;
   }
 
-  const DBPORT =  3306;
-  const DBHOST = "localhost";
-  const DBUSER = "root";
-  const DBPASSWORD = "root";
-  const DBNAME = "db_quotation"; // your single DB
+
+  const DBPORT =  4000;
+  const DBHOST = "gateway01.eu-central-1.prod.aws.tidbcloud.com";
+  const DBUSER = "4SvrStehhcfBgjp.root";
+  const DBPASSWORD = "OiAmaowrhxiEw9Ky";
+  const DBNAME = "db_quotation";
+
+  // const DBPORT =  3306;
+  // const DBHOST = "localhost";
+  // const DBUSER = "root";
+  // const DBPASSWORD = "";
+  // const DBNAME = "db_quotation"; // your single DB
 
   const pool = createPool({
     port: DBPORT,
@@ -40,6 +47,9 @@ DbModel.getConnectDb = () => {
     multipleStatements: true,
     connectTimeout: 120000,
     dateStrings: true,
+      ssl: {
+      rejectUnauthorized: true
+    }
   }).promise();
 
   // Wrap query for easier usage
