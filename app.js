@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser')
 const compression = require('compression');
 const cors = require('cors');
 const multer = require("multer");
+const cron = require('node-cron');    
+const axios = require('axios');
 
 const upload = multer();
 //const helmet = require('helmet')
@@ -49,6 +51,19 @@ app.use('/api/v1/ai-logs',aiLogsRouter);
 app.all('/', function (req, res) {
   res.json({ message: "Welcome to Quotation APIs" });
 });
+
+if (process.env.NODE_ENV === 'production') {
+  cron.schedule('*/10 * * * *', async () => {
+    try {
+      await axios.get(process.env.SELF_URL || 'https://quotationbackend.onrender.com/');
+      console.log('Self-ping successful, keeping app awake');
+    } catch (err) {
+      console.error('Self-ping failed:', err.message);
+    }
+  });
+}
+
+
 
 module.exports = app;
 
