@@ -19,7 +19,6 @@ AILogs.getAllAILogs = (postArr, result) => {
         }
         if(res){
         if(res.length>0){
-            
             for(let element of res){
                 element.logid = functionsClass.encrypt(element.id);
                 if(element.quotationAdded==1){
@@ -39,9 +38,7 @@ AILogs.getAllAILogs = (postArr, result) => {
                 }else{
                     element.quotationNumber =  "" ; 
                 }
-
             }
-            console.log("Fff",res)
             result(null,res);
             return;
         }else{

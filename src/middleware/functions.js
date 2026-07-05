@@ -272,6 +272,28 @@ function formatDateString(isoString) {
   return `${yyyy}-${mm}-${dd} ${hh}:${mi}:${ss}`;
 }
 
+const getNameParams = (conn, table_name, column, where = "") => {
+  return new Promise((resolve, reject) => {
+    if (where != "") {
+      where = " AND " + where;
+    }
+    let return_value = "";
+    // var qry = `SELECT  ${column}  FROM  ${table_name}  WHERE 1=1 ${where} LIMIT 1 ;`;
+    var qry = `SELECT  ${column}  FROM  ${table_name}  WHERE 1=1 ${where}  ;`;
+    // console.log("=="+qry)
+    conn.query(qry, (err, res) => {
+      conn.end();
+      if (err) {
+        reject(err);
+      }
+      if (res != undefined) {
+        return_value = res[0];
+      }
+      resolve(return_value);
+    });
+  });
+};
+
 module.exports = {
   encrypt,
   decrypt,
@@ -284,5 +306,6 @@ module.exports = {
   getfilterStartAndEndOfDayInUTC,
   formatAnyDate,
   getNamesWithConn,
-  formatDateString
+  formatDateString,
+  getNameParams
 }

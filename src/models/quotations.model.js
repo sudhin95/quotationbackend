@@ -193,7 +193,7 @@ async function notifyQuotationApproved(conn, quotationId, postArr) {
     }
     // Pull client details for a useful notification payload
     const details = await getQuotationSummaryForNotification(conn, quotationId);
-
+console.log("details", details);
     try {
         await axios.post(webhookUrl, {
             quotationId,
@@ -202,6 +202,8 @@ async function notifyQuotationApproved(conn, quotationId, postArr) {
             totalAmount: postArr.totalamount,
             clientName: details.clientname,
             companyName: details.companyname,
+            email: details.email,
+            phone: details.phone,
             approvedAt: functionsClass.formatDate(new Date())
         }, { timeout: 10000 });
     } catch (err) {
@@ -217,7 +219,9 @@ function getQuotationSummaryForNotification(conn, quotationId) {
         const qry = `
             SELECT quotations.sQuotationNumber as quotationnumber,
                    clients.sClientName as clientname,
-                   clients.sCompanyName as companyname
+                   clients.sCompanyName as companyname,
+                   clients.sEmail as email,
+                   clients.sPhoneNumber as phone
             FROM quotations
             LEFT JOIN clients ON quotations.iClientId = clients.ID
             WHERE quotations.ID = ?
@@ -404,6 +408,21 @@ Quotations.approveQuotation = (quotId, result) => {
             result(err, null);
             return;
         }   
+
+        if(res){
+        var quotArr = await functionsClass.getNameParams(
+                        conn,
+                        `quotations`,
+                        `sTitle as title,fTotalAmount as totalamount`,
+                        `ID='${quotationId}'`
+                    );
+
+          console.log("quotArr", quotArr)
+            // Fire-and-forget: don't let webhook failure block the response
+            notifyQuotationApproved(conn, quotationId, quotArr).catch(webhookErr => {
+                console.error('n8n webhook failed (non-blocking):', webhookErr.message);
+            });          
+        }
         result(null, res);
     });
 }
