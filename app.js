@@ -49,7 +49,11 @@ app.use('/api/v1/ai-logs',aiLogsRouter);
 app.all('/', function (req, res) {
   res.json({ message: "Welcome to Quotation APIs" });
 });
-app.listen(port, () => {
-  // console.log(`Server is running on port  ${port}`);
-});
+
+module.exports = app;
+
+
+// app.listen(port, () => {
+//   // console.log(`Server is running on port  ${port}`);
+// });
 
