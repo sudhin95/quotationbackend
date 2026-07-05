@@ -11,7 +11,7 @@ const AILogs = function (ailogs) {};
 
 AILogs.getAllAILogs = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
-    var qry="SELECT ai_logs.ID as id,ai_logs.sUserRequest as request,ai_logs.sAIResponse as response,ai_logs.dtCreatedOn as createdAt,ai_logs.iQuotationAdded as quotationAdded,ai_logs.iQuotationId as quotationId FROM ai_logs ORDER BY dtCreatedOn DESC";
+    var qry="SELECT ai_logs.ID as id,ai_logs.sUserRequest as request,ai_logs.sAIResponse as response,ai_logs.dtCreatedOn as createdAt,ai_logs.iQuotationAdded as quotationAdded,ai_logs.iQuotationId as quotationId FROM ai_logs ORDER BY ID DESC";
     conn.query(qry,async(err,res)=>{
         if(err){
         result(err,null);

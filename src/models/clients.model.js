@@ -11,7 +11,7 @@ const Clients = function (clients) {};
 
 Clients.getAllClients = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
-    var qry="SELECT clients.ID as id,clients.sClientName as name,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,clients.iStatus as status,clients.dtCreatedOn as createdAt FROM clients WHERE clients.iStatus = 1 ORDER BY dtCreatedOn DESC";
+    var qry="SELECT clients.ID as id,clients.sClientName as name,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,clients.iStatus as status,clients.dtCreatedOn as createdAt FROM clients WHERE clients.iStatus = 1 ORDER BY ID DESC";
     conn.query(qry,(err,res)=>{
         if(err){
         result(err,null);
