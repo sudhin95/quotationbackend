@@ -47,9 +47,9 @@ DbModel.getConnectDb = () => {
     multipleStatements: true,
     connectTimeout: 120000,
     dateStrings: true,
-    //   ssl: {
-    //   rejectUnauthorized: true
-    // }
+      ssl: {
+      rejectUnauthorized: true
+    }
   }).promise();
 
   // Wrap query for easier usage
