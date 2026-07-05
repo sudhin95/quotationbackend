@@ -8,48 +8,65 @@
         "responseMode": "responseNode",
         "options": {}
       },
-      "id": "1f2a3b4c-0001-4a1a-9c1a-000000000001",
+      "id": "43c6798c-4f24-4d11-9efd-64df705be9b4",
       "name": "Webhook",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
-      "position": [280, 300],
+      "position": [
+        112,
+        -96
+      ],
       "webhookId": "quotation-approved"
     },
     {
       "parameters": {
-        "fromEmail": "notifications@yourcompany.com",
-        "toEmail": "sales@yourcompany.com",
-        "subject": "=Quotation {{ $json.quotationNumber }} Approved",
-        "text": "=Quotation {{ $json.quotationNumber }} for {{ $json.clientName }} ({{ $json.companyName }}) has been approved.\n\nTitle: {{ $json.title }}\nTotal Amount: {{ $json.totalAmount }}\nApproved At: {{ $json.approvedAt }}",
+        "fromEmail": "sudhin95@gmail.com",
+        "toEmail": "={{ $json.body.email}}  ",
+        "subject": "=Quotation {{ $json.body.quotationNumber }}  Approved",
+        "html": "=<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: auto; background-color: #f4f5f7; padding: 20px;\">\n  <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06);\">\n\n    <!-- Header Banner -->\n    <tr>\n      <td style=\"background-color: #16a34a; padding: 28px 32px;\">\n        <span style=\"color: #ffffff; font-size: 20px; font-weight: bold;\">Quotation Confirmed</span>\n      </td>\n    </tr>\n\n    <!-- Body -->\n    <tr>\n      <td style=\"padding: 32px;\">\n        <p style=\"color: #374151; font-size: 15px; margin: 0 0 8px;\">\n          Dear {{ $json.body.companyName }},\n        </p>\n        <p style=\"color: #374151; font-size: 15px; margin: 0 0 24px; line-height: 1.6;\">\n          Thank you for approving quotation <strong style=\"color:#111827;\">{{ $json.body.quotationNumber }}</strong>.\n          We've received your confirmation and will proceed accordingly. A summary is below for your records.\n        </p>\n\n        <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;\">\n          <tr style=\"background-color: #f9fafb;\">\n            <td style=\"padding: 14px 18px; font-size: 13px; color: #6b7280; width: 40%;\">Quotation No.</td>\n            <td style=\"padding: 14px 18px; font-size: 14px; color: #111827; font-weight: 600;\">{{ $json.body.quotationNumber }}</td>\n          </tr>\n          <tr>\n            <td style=\"padding: 14px 18px; font-size: 13px; color: #6b7280;\">Title</td>\n            <td style=\"padding: 14px 18px; font-size: 14px; color: #111827;\">{{ $json.body.title }}</td>\n          </tr>\n          <tr style=\"background-color: #f9fafb;\">\n            <td style=\"padding: 14px 18px; font-size: 13px; color: #6b7280;\">Total Amount</td>\n            <td style=\"padding: 14px 18px; font-size: 17px; color: #16a34a; font-weight: bold;\">BHD {{ $json.body.totalAmount }}</td>\n          </tr>\n          <tr>\n            <td style=\"padding: 14px 18px; font-size: 13px; color: #6b7280;\">Approved On</td>\n            <td style=\"padding: 14px 18px; font-size: 14px; color: #111827;\">{{ $json.body.approvedAt }}</td>\n          </tr>\n        </table>\n    \n\n        <p style=\"color: #374151; font-size: 14px; margin: 28px 0 0; line-height: 1.6;\">\n          If you have any questions, feel free to reach out to us — we're happy to help.\n        </p>\n\n        <p style=\"color: #374151; font-size: 14px; margin: 20px 0 0;\">\n          Best regards,<br>\n          <strong>Admin</strong>\n        </p>\n      </td>\n    </tr>\n\n    <!-- Footer -->\n    <tr>\n      <td style=\"background-color: #f9fafb; padding: 18px 32px; text-align: center; border-top: 1px solid #eee;\">\n        <span style=\"font-size: 12px; color: #9ca3af;\">This is an automated confirmation email.</span>\n      </td>\n    </tr>\n\n  </table>\n</div>",
         "options": {}
       },
-      "id": "1f2a3b4c-0002-4a1a-9c1a-000000000002",
+      "id": "3d61162d-4e30-4760-bcb9-09d8f23ab760",
       "name": "Send Email",
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
-      "position": [520, 220],
+      "position": [
+        336,
+        -288
+      ],
+      "webhookId": "2fa87a61-0609-4d38-96e2-8f25ed17dd54",
       "credentials": {
         "smtp": {
-          "id": "REPLACE_WITH_YOUR_SMTP_CREDENTIAL_ID",
+          "id": "cmmbGaIBCy8wExIV",
           "name": "SMTP account"
         }
       }
     },
     {
       "parameters": {
-        "authentication": "webhook",
-        "content": "=✅ *Quotation Approved*\n*Number:* {{ $json.quotationNumber }}\n*Client:* {{ $json.clientName }} ({{ $json.companyName }})\n*Title:* {{ $json.title }}\n*Total:* {{ $json.totalAmount }}\n*Approved At:* {{ $json.approvedAt }}",
-        "options": {}
+        "authentication": "oAuth2",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C0BF7NBSJF4",
+          "mode": "list",
+          "cachedResultName": "quotations"
+        },
+        "text": "=✅ *Quotation Approved* *Number:* {{ $json.body.quotationNumber }} *Client:* {{ $json.body.clientName }} ({{ $json.body.companyName }}) *Total:* BHD {{ $json.body.totalAmount }} *Approved On:* {{ $json.body.approvedAt }}",
+        "otherOptions": {}
       },
-      "id": "1f2a3b4c-0003-4a1a-9c1a-000000000003",
+      "id": "68469a5a-f4b8-49bb-bb44-11074fb9192c",
       "name": "Send Slack Notification",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
-      "position": [520, 380],
-      "webhookId": "",
+      "position": [
+        336,
+        -96
+      ],
+      "webhookId": "a6002870-56e4-414e-9007-6e3f0a00af5d",
       "credentials": {
-        "slackApi": {
-          "id": "REPLACE_WITH_YOUR_SLACK_CREDENTIAL_ID",
+        "slackOAuth2Api": {
+          "id": "RKIPrgkerH06x8id",
           "name": "Slack account"
         }
       }
@@ -60,38 +77,108 @@
         "responseBody": "={{ { \"success\": true, \"message\": \"Notification sent\" } }}",
         "options": {}
       },
-      "id": "1f2a3b4c-0004-4a1a-9c1a-000000000004",
+      "id": "19883403-763e-4641-a7bf-341941f3d62a",
       "name": "Respond Success",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
-      "position": [760, 300]
+      "position": [
+        560,
+        -96
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "==✅ *Quotation Approved*\n*Number:* {{ $json.body.quotationNumber }}\n*Client:* {{ $json.body.clientName }} ({{ $json.body.companyName }})\n*Total:* BHD {{ $json.body.totalAmount }}\n*Approved On:* {{ $json.body.approvedAt }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        336,
+        96
+      ],
+      "id": "edb14e74-a290-42d0-8396-6cda9a225d23",
+      "name": "Discord",
+      "webhookId": "0697b7d5-16cf-4fac-8b95-cbba21a1d662",
+      "executeOnce": false,
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "SKjSSq02W57GxkBh",
+          "name": "Discord Webhook account"
+        }
+      }
     }
   ],
+  "pinData": {},
   "connections": {
     "Webhook": {
       "main": [
         [
-          { "node": "Send Email", "type": "main", "index": 0 },
-          { "node": "Send Slack Notification", "type": "main", "index": 0 }
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send Slack Notification",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
         ]
       ]
     },
     "Send Email": {
       "main": [
-        [{ "node": "Respond Success", "type": "main", "index": 0 }]
+        [
+          {
+            "node": "Respond Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "Send Slack Notification": {
       "main": [
-        [{ "node": "Respond Success", "type": "main", "index": 0 }]
+        [
+          {
+            "node": "Respond Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Discord": {
+      "main": [
+        [
+          {
+            "node": "Respond Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     }
   },
-  "active": false,
+  "active": true,
   "settings": {
-    "executionOrder": "v1"
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
   },
+  "versionId": "e40a8ecb-3cdc-454a-909c-19dd9695f3f8",
   "meta": {
-    "instanceId": "REPLACE_WITH_YOUR_INSTANCE_ID"
-  }
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cb451e88297f8c330907eccf88d850d89a18857c79c8765886116da0556d8732"
+  },
+  "nodeGroups": [],
+  "id": "hFeTOBikWDd7UWZE",
+  "tags": []
 }

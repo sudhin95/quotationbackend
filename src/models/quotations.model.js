@@ -15,7 +15,7 @@ const axios = require('axios');
 const Quotations = function (quotations) {};
 Quotations.getAllQuotations = (postArr, result) => {
     const conn = DbModel.getConnectDb();  
-    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotationnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as status,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as createdname,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,quotations.sDescription as description 
+    var qry=`SELECT quotations.ID as id,quotations.sQuotationNumber as quotationnumber,quotations.sTitle as title,quotations.fTotalAmount as totalamount,quotations.iStatus as status,quotations.dtCreatedOn as createdon,quotations.iCreatedBy as createdby,clients.sClientName as createdname,clients.sCompanyName as company,clients.sEmail as email,clients.sPhoneNumber as phone,clients.sNotes as notes,quotations.sDescription as description,quotations.dtQuotationDate as quotationdate
     FROM quotations 
     LEFT JOIN clients ON quotations.iClientId = clients.ID 
     WHERE 1=1 ORDER BY quotations.dtCreatedOn DESC`;
