@@ -59,6 +59,8 @@ DB_USER=root
 DB_PASSWORD=root
 DB_NAME=db_quotation
 
+Database is present in db folder ,deploy in local database
+
 # Gemini AI
 GEMINI_API_KEY=your_gemini_api_key_here
 
