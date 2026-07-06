@@ -32,7 +32,7 @@ DbModel.getConnectDb = () => {
   // const DBPORT =  3306;
   // const DBHOST = "localhost";
   // const DBUSER = "root";
-  // const DBPASSWORD = "";
+  // const DBPASSWORD = "root";
   // const DBNAME = "db_quotation"; // your single DB
 
   const pool = createPool({

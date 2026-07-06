@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser')
 const compression = require('compression');
 const cors = require('cors');
 const multer = require("multer");
-const cron = require('node-cron');    
+const cron = require('node-cron');
 const axios = require('axios');
 
 const upload = multer();
@@ -34,7 +34,12 @@ require('events').EventEmitter.prototype._maxListeners = 0;
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 
-const port = 5200
+// Render (and most hosts) assign the port dynamically via process.env.PORT.
+// Locally, there's no PORT env variable, so it falls back to 5200.
+// This one line is what makes the SAME code work on both localhost and Render
+// with zero manual changes.
+const port = process.env.PORT || 5200;
+
 const loginRouter = require('./src/routes/login.route');
 const clientsRouter = require('./src/routes/clients.route');
 const quotationsRouter = require('./src/routes/quotations.route');
@@ -42,11 +47,9 @@ const aiLogsRouter = require('./src/routes/ailogs.route');
 
 app.use(express.static("webroot"));
 app.use('/api/v1/auth', loginRouter);
-app.use('/api/v1/clients',clientsRouter);
-app.use('/api/v1/quotations',quotationsRouter);
-app.use('/api/v1/ai-logs',aiLogsRouter);
-
-
+app.use('/api/v1/clients', clientsRouter);
+app.use('/api/v1/quotations', quotationsRouter);
+app.use('/api/v1/ai-logs', aiLogsRouter);
 
 app.all('/', function (req, res) {
   res.json({ message: "Welcome to Quotation APIs" });
@@ -63,12 +66,10 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
 
 module.exports = app;
 
-
-// app.listen(port, () => {
-//   // console.log(`Server is running on port  ${port}`);
-// });
 
