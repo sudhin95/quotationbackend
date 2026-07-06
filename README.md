@@ -36,6 +36,7 @@ quotationbackend/
 ├── n8n-workflows/
 │   └── quotation-approved-notification.json   # Exported n8n workflow
 ├── .env                          # Environment variables (not committed)
+├── app.js                        # Express app, middleware, routes, server startup
 └── package.json
 ```
 
@@ -58,14 +59,6 @@ DB_USER=root
 DB_PASSWORD=root
 DB_NAME=db_quotation
 
-since the app is deployed in free server i have added
-     ssl: {
-      rejectUnauthorized: true
-    } 
-    for the successful connection in the db connection 
-    
-    While connecting in local db remove that ssl from the db connection for the successful connection
-
 # Gemini AI
 GEMINI_API_KEY=your_gemini_api_key_here
 
@@ -78,19 +71,62 @@ APP_BASE_URL=https://yourapp.com
 
 **Never commit `.env` to version control.** No API keys are exposed to the frontend — all AI and webhook calls are made server-side only.
 
+### 3. Database connection — local vs. live (SSL)
 
-### 3. Run the server
+The live deployment runs on a free-tier hosted MySQL instance that **requires SSL** to connect successfully. A local MySQL install typically does **not** use SSL, so the same connection config can't be used unchanged in both places.
 
+In `config/db.config.js`:
+
+- **Running against the live/hosted DB:** keep SSL enabled —
+  ```javascript
+  ssl: {
+    rejectUnauthorized: true
+  }
+  ```
+- **Running against a local MySQL instance:** remove (or comment out) the `ssl` block entirely, or the connection will fail.
+
+The repository currently has the **live DB credentials** filled in for convenience. If you're running this locally, update `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` in `.env` (or directly in `db.config.js`, depending on how it's wired) to point at your local MySQL instance, and remove the `ssl` block as described above.
+
+### 4. Run the server
+
+**Local development** (auto-restarts on file changes):
 ```bash
 npm start
 ```
+This runs `nodemon app`.
 
+**Production (e.g. Render):** the platform should run the app directly with Node, not nodemon:
+```bash
+node app.js
+```
+On Render, set this explicitly as the **Start Command** in the service settings, rather than relying on the default `npm start`.
+
+### 5. Port configuration
+
+The server listens on `process.env.PORT` if set, falling back to `5200` otherwise:
+```javascript
+const port = process.env.PORT || 5200;
+```
+This means no manual port changes are needed between environments — Render assigns `PORT` automatically in production, and local development falls back to `5200` with no extra configuration.
+
+## API Routes
+
+All routes are mounted under `/api/v1`:
+
+| Route prefix | Purpose |
+|---|---|
+| `/api/v1/auth` | Login/authentication |
+| `/api/v1/clients` | Client CRUD |
+| `/api/v1/quotations` | Quotation CRUD |
+| `/api/v1/ai-logs` | AI request/response history |
+
+AI-assisted drafting specifically: `POST /api/v1/quotations/ai-draft`
 
 ## Key Features
 
 ### AI-Assisted Quotation Drafting
 
-- Endpoint: `POST /api/quotations/ai-draft`
+- Endpoint: `POST /api/v1/quotations/ai-draft`
 - Takes a short project description (e.g. *"Private dining catering for 10 guests"*) and returns a structured JSON draft: suggested line items, quantities, estimated hours, and unit prices.
 - **Pricing is based on Bahrain (BHD) market rates** — see `src/prompts/quotation-draft.md` for the full prompt and pricing rules.
 - **If the AI is not confident about a price, it returns `null`** for `unitprice` and `totalprice` rather than inventing a number. The frontend displays these as "TBD" so a human can fill them in.
@@ -113,11 +149,16 @@ npm start
 
 ## Testing
 
+```bash
+npm test
+```
+
 Basic unit tests cover:
 - **Total calculation** — `quantity × unitprice`, and summing item totals into a grand total, including null-price handling.
 - **AI response validation** — ensures null prices are preserved (never invented), invalid quantities are corrected, and malformed responses are rejected before they reach the database.
 
-
 ## Notes on Currency
 
 All prices are in **BHD (Bahraini Dinar)**, which uses 3 decimal places (the fils is 1/1000 BHD), not 2 like USD. Calculations throughout the backend round to 3 decimal places accordingly.
+
+
