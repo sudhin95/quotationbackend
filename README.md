@@ -58,6 +58,14 @@ DB_USER=root
 DB_PASSWORD=root
 DB_NAME=db_quotation
 
+since the app is deployed in free server i have added
+     ssl: {
+      rejectUnauthorized: true
+    } 
+    for the successful connection in the db connection 
+    
+    While connecting in local db remove that ssl from the db connection for the successful connection
+
 # Gemini AI
 GEMINI_API_KEY=your_gemini_api_key_here
 
@@ -69,6 +77,7 @@ APP_BASE_URL=https://yourapp.com
 ```
 
 **Never commit `.env` to version control.** No API keys are exposed to the frontend — all AI and webhook calls are made server-side only.
+
 
 ### 3. Run the server
 
